@@ -1,0 +1,594 @@
+:root{--red:#d20d16;--red-dark:#a80810;--ink:#151515;--muted:#616161;--bg:#fff;--surface:#fff;--soft:#f5f5f4;--line:#e5e5e5;--header:rgba(255,255,255,.95);--footer:#141414;--shadow:0 16px 45px rgba(0,0,0,.12);--radius:18px;--max:1320px;color-scheme:light}html[data-theme="dark"]{--ink:#f5f5f5;--muted:#bababa;--bg:#111;--surface:#191919;--soft:#161616;--line:#303030;--header:rgba(17,17,17,.95);--footer:#090909;--shadow:0 16px 45px rgba(0,0,0,.4);color-scheme:dark}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65}img{max-width:100%;display:block}a{color:inherit}.container{width:min(calc(100% - 40px),var(--max));margin:auto}.skip-link{position:fixed;top:-70px;left:16px;z-index:200;background:var(--surface);padding:12px 16px;border:2px solid var(--red);border-radius:8px}.skip-link:focus{top:16px}.site-header{position:sticky;top:0;z-index:100;background:var(--header);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}.header-inner{height:82px;display:flex;align-items:center;gap:34px}.brand{display:flex;align-items:center;gap:12px;text-decoration:none;min-width:265px}.brand img{width:58px;height:58px;object-fit:contain}.brand-text{line-height:.92;text-transform:uppercase}.brand-text span{display:block;font-weight:800;letter-spacing:.06em;font-size:12px}.brand-text strong{display:block;color:var(--red);font-size:25px;letter-spacing:.02em}.main-nav{margin:auto;display:flex;align-items:center;gap:38px}.main-nav a{text-decoration:none;text-transform:uppercase;font-weight:800;font-size:13px;position:relative;padding:30px 0}.main-nav a:after{content:"";position:absolute;height:2px;left:0;right:100%;bottom:20px;background:var(--red);transition:.25s}.main-nav a:hover:after,.main-nav a.active:after{right:0}.mobile-cta{display:none}.header-actions{display:flex;align-items:center;gap:12px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:0;border-radius:999px;padding:14px 25px;background:var(--red);color:#fff;text-decoration:none;text-transform:uppercase;font-size:13px;font-weight:850;letter-spacing:.02em;cursor:pointer;transition:transform .2s,background .2s,box-shadow .2s}.btn:hover{background:var(--red-dark);transform:translateY(-2px);box-shadow:0 10px 25px rgba(210,13,22,.25)}.btn-outline{background:transparent;border:1px solid rgba(255,255,255,.9)}.btn-outline:hover{background:#fff;color:#111}.theme-toggle,.nav-toggle{background:transparent;border:1px solid var(--line);color:var(--ink);border-radius:999px;width:43px;height:43px;cursor:pointer}.nav-toggle{display:none;border:0;flex-direction:column;justify-content:center;gap:5px}.nav-toggle span{display:block;width:24px;height:2px;background:currentColor;margin:auto}.hero{height:min(680px,calc(100vh - 82px));min-height:560px;position:relative;background-image:url('../images/hero.jpg');background-size:cover;background-position:center 32%;color:#fff}.hero-shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.76) 0%,rgba(0,0,0,.38) 35%,rgba(0,0,0,.03) 70%)}.hero-inner{height:100%;display:flex;align-items:center;position:relative}.hero-content{max-width:570px}.hero h1{font-size:clamp(40px,4.7vw,70px);line-height:.99;margin:10px 0 18px;text-transform:uppercase;letter-spacing:-.045em;text-shadow:0 3px 22px rgba(0,0,0,.35)}.eyebrow{text-transform:uppercase;color:var(--red);font-size:12px;font-weight:900;letter-spacing:.1em}.eyebrow.light{color:#fff}.red-line{width:52px;height:3px;background:var(--red);margin:20px 0}.hero-lead{font-size:clamp(20px,2vw,28px);line-height:1.35;margin:0 0 28px}.hero-actions{display:flex;gap:14px;flex-wrap:wrap}.values{position:relative;margin-top:-45px;z-index:3}.values-grid{background:var(--surface);box-shadow:var(--shadow);border:1px solid var(--line);border-radius:var(--radius);display:grid;grid-template-columns:repeat(4,1fr);padding:26px}.value{display:flex;gap:18px;padding:0 24px;border-right:1px solid var(--line)}.value:last-child{border:0}.value-icon{width:28px;height:28px;flex:0 0 28px;color:var(--red);line-height:1;display:grid;place-items:center}.value-icon svg{width:100%;height:100%;fill:none;stroke:currentColor;stroke-width:2.7;stroke-linecap:round;stroke-linejoin:round}.value h3{font-size:13px;text-transform:uppercase;margin:0}.value p{font-size:13px;margin:4px 0;color:var(--muted)}.section{padding:95px 0}.section-soft{background:var(--soft)}h2{font-size:clamp(31px,3.3vw,48px);line-height:1.1;margin:10px 0 22px;letter-spacing:-.03em}h3{line-height:1.25}.training-layout{display:grid;grid-template-columns:.85fr 1.55fr;gap:65px;align-items:center}.training-layout>div:first-child p{max-width:520px;margin-bottom:28px}.training-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.training-card,.info-card,.offer,.person,.feature{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:0 8px 25px rgba(0,0,0,.05)}.training-card{padding:34px;position:relative;min-height:285px}.training-card>a{position:absolute;right:28px;top:38px;color:var(--red);font-size:25px;text-decoration:none}.round-icon{display:inline-grid;place-items:center;width:52px;height:52px;background:var(--red);color:#fff;border-radius:50%}.training-card h3{font-size:22px;margin:20px 0 0;text-transform:uppercase}.age{color:var(--red);font-weight:800}.training-card p{color:var(--muted)}.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px}.info-card{padding:42px}.schedule-row{display:flex;justify-content:space-between;padding:17px 0;border-bottom:1px solid var(--line)}.cta{padding:48px;background:var(--ink);color:var(--bg);border-radius:var(--radius);display:flex;justify-content:space-between;gap:40px;align-items:center}.cta h2{margin-bottom:8px}.page-hero{padding:100px 0 80px;background:linear-gradient(135deg,var(--soft),var(--bg));border-bottom:1px solid var(--line)}.page-hero h1{font-size:clamp(44px,6vw,74px);margin:5px 0 10px;line-height:1}.page-hero p{font-size:20px;color:var(--muted);max-width:720px}.split{display:grid;grid-template-columns:1.2fr .8fr;gap:70px}.stats{display:grid;gap:16px}.stat{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:26px}.stat strong,.stat span{display:block}.stat strong{font-size:35px;color:var(--red)}.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.feature{padding:35px}.feature h3{font-size:23px}.content{max-width:880px}.content p,.content li{color:var(--muted)}.oath{padding-left:22px}.oath li{padding:12px 0;border-bottom:1px solid var(--line)}.offer-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}.offer{padding:42px}.offer li{margin:8px 0}.trainer-feature{display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:center}.team-photo img{border-radius:var(--radius);box-shadow:var(--shadow);aspect-ratio:16/10;object-fit:cover}.person-detail{border-left:4px solid var(--red);padding-left:22px;margin-top:30px}.role{color:var(--red);font-weight:850;text-transform:uppercase;font-size:12px;letter-spacing:.08em}.board-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.person{padding:32px}.avatar-logo{width:70px;height:70px;border-radius:50%;background:#fff;padding:7px;margin-bottom:18px}.avatar-logo img{width:100%;height:100%;object-fit:contain}.contact-grid{display:grid;grid-template-columns:.75fr 1.25fr;gap:70px}.contact-list{margin-top:35px}.contact-list a{color:var(--red)}.form{display:grid;grid-template-columns:1fr 1fr;gap:18px;background:var(--surface);padding:36px;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}.field{display:flex;flex-direction:column;gap:7px}.field.full,.full{grid-column:1/-1}label{font-weight:750;font-size:14px}input,textarea,select{width:100%;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink);padding:14px 15px;font:inherit}input:focus,textarea:focus,select:focus{outline:3px solid rgba(210,13,22,.2);border-color:var(--red)}.error{color:var(--red);min-height:1em}.privacy-check{font-weight:400;display:flex;gap:10px;align-items:flex-start}.privacy-check input{width:auto;margin-top:6px}.privacy-check a{color:var(--red)}.form-status{margin:0}.legal a{color:var(--red)}.notice{padding:20px;background:var(--soft);border-left:4px solid var(--red);border-radius:10px}.site-footer{background:var(--footer);color:#ddd;padding:55px 0 20px}.footer-grid{display:grid;grid-template-columns:1.3fr .8fr 1fr 1fr;gap:45px}.site-footer h3{color:#fff;font-size:14px}.site-footer p,.site-footer a{font-size:13px;color:#bbb}.footer-links{display:grid;gap:7px}.footer-links a{text-decoration:none}.copyright{display:flex;justify-content:space-between;border-top:1px solid #343434;margin-top:38px;padding-top:18px;font-size:12px;color:#999}.copyright a{color:#aaa;text-decoration:none}.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}.reveal.visible{opacity:1;transform:none}@media(max-width:1050px){.brand{min-width:auto}.main-nav{gap:20px}.header-cta{display:none}.values-grid{grid-template-columns:repeat(2,1fr);gap:25px}.value:nth-child(2){border:0}.training-layout,.trainer-feature,.contact-grid,.split{grid-template-columns:1fr}.footer-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:760px){.container{width:min(calc(100% - 28px),var(--max))}.header-inner{height:70px}.brand img{width:48px;height:48px}.brand-text strong{font-size:21px}.main-nav{position:fixed;inset:70px 0 auto;background:var(--surface);display:grid;gap:0;padding:18px 24px 28px;border-bottom:1px solid var(--line);box-shadow:var(--shadow);transform:translateY(-140%);transition:transform .3s}.main-nav.open{transform:none}.main-nav a{padding:14px 4px}.main-nav a:after{bottom:8px}.mobile-cta{display:block!important;color:#fff!important;background:var(--red);text-align:center;border-radius:999px;margin-top:10px}.nav-toggle{display:flex}.hero{height:auto;min-height:650px;background-position:61% center}.hero-shade{background:linear-gradient(90deg,rgba(0,0,0,.82),rgba(0,0,0,.25))}.hero-content{padding-top:150px;max-width:420px}.values{margin-top:-25px}.values-grid{grid-template-columns:1fr;padding:22px}.value{border-right:0;border-bottom:1px solid var(--line);padding:16px 5px}.value:last-child{border:0}.section{padding:70px 0}.training-layout{gap:45px}.training-cards,.info-grid,.offer-grid,.feature-grid,.board-grid{grid-template-columns:1fr}.cta{display:block}.cta .btn{margin-top:18px}.form{grid-template-columns:1fr;padding:24px}.footer-grid{grid-template-columns:1fr}.copyright{display:grid;gap:10px}.page-hero{padding:70px 0 55px}}@media(max-width:480px){.brand-text strong{font-size:18px}.brand-text span{font-size:10px}.theme-toggle{width:39px;height:39px}.hero h1{font-size:42px}.hero-actions .btn{width:100%}.hero{background-position:59% center}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}.btn,.main-nav{transition:none}}
+/* Trainer profiles – Version 1.0 */
+.trainer-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}.trainer-card{background:var(--card,#fff);border-radius:18px;overflow:hidden;box-shadow:0 14px 35px rgba(0,0,0,.10);transition:transform .25s ease,box-shadow .25s ease}.trainer-card:hover{transform:translateY(-7px);box-shadow:0 20px 45px rgba(0,0,0,.16)}.trainer-card a{display:block;color:inherit;text-decoration:none;height:100%}.trainer-card img{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:center top;display:block}.trainer-card-body{padding:22px}.trainer-card h2{font-size:1.28rem;margin:10px 0 5px}.trainer-card p{margin:0 0 18px;color:var(--muted,#666)}.rank-badge{display:inline-flex;background:var(--red,#d10d16);color:#fff;padding:6px 11px;border-radius:999px;font-size:.82rem;font-weight:800}.profile-link{color:var(--red,#d10d16);font-weight:800}.back-link{display:inline-flex;margin-bottom:28px;color:var(--red,#d10d16);font-weight:800;text-decoration:none}.profile-layout{display:grid;grid-template-columns:minmax(300px,.85fr) minmax(0,1.15fr);gap:64px;align-items:center}.profile-image-wrap{border-radius:22px;overflow:hidden;box-shadow:0 22px 55px rgba(0,0,0,.17)}.profile-image{display:block;width:100%;aspect-ratio:3/4;object-fit:cover;object-position:center top}.profile-content h1{font-size:clamp(2.5rem,6vw,5rem);line-height:.98;margin:.15em 0}.profile-rank{font-size:1.8rem;font-weight:900;color:var(--red,#d10d16);margin:0 0 22px}.profile-role{display:flex;gap:12px;align-items:center;font-size:1.2rem;font-weight:750;padding-top:20px;border-top:3px solid var(--red,#d10d16);width:max-content;max-width:100%}.profile-intro{font-size:1.15rem;line-height:1.75;margin:32px 0;border-bottom:1px solid rgba(128,128,128,.25);padding-bottom:28px}.profile-facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 34px}.profile-facts>div{display:flex;gap:14px;align-items:flex-start}.profile-facts>div>span{font-size:1.65rem;color:var(--red,#d10d16)}.profile-facts p{margin:0;display:grid;gap:4px}.profile-facts strong{font-size:1rem;overflow-wrap:anywhere}.profile-facts a{color:inherit}.trainer-quote{margin:34px 0 0;padding:25px 28px;border-radius:16px;background:var(--soft,#f5f5f5);border-left:5px solid var(--red,#d10d16);font-size:1.08rem;line-height:1.65}[data-theme="dark"] .trainer-card,[data-theme="dark"] .trainer-quote{background:#202124}@media(max-width:1050px){.trainer-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.profile-layout{gap:38px}}@media(max-width:720px){.trainer-grid{grid-template-columns:1fr}.profile-layout{grid-template-columns:1fr;gap:30px}.profile-image-wrap{max-width:460px}.profile-facts{grid-template-columns:1fr}.profile-content h1{font-size:2.7rem}}
+/* Vorstand – Version 1.0 RC1 */
+.board-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:20px}
+.board-card{background:var(--card,#fff);border-radius:18px;overflow:hidden;box-shadow:0 14px 35px rgba(0,0,0,.10);transition:transform .25s ease,box-shadow .25s ease}
+.board-card:hover{transform:translateY(-7px);box-shadow:0 20px 45px rgba(0,0,0,.16)}
+.board-card>a{display:flex;flex-direction:column;height:100%;color:inherit;text-decoration:none}
+.board-card img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:center top}
+.board-card-body{display:flex;flex-direction:column;align-items:flex-start;flex:1;padding:20px}
+.board-card h2{font-size:1.16rem;margin:14px 0 4px}
+.board-rank{color:var(--red,#d10d16);font-weight:850;margin:0 0 15px}
+.board-contact{display:grid;gap:7px;font-size:.84rem;overflow-wrap:anywhere;margin-bottom:18px}
+.board-card .profile-link{margin-top:auto}
+.role-badge{display:inline-flex;background:var(--red,#d10d16);color:#fff;padding:7px 13px;border-radius:999px;font-weight:850;font-size:.84rem}
+.rank-outline{display:inline-flex;border:1px solid rgba(128,128,128,.45);padding:7px 13px;border-radius:999px;font-weight:850}
+.board-badges{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}
+.board-mini-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px}
+.board-mini{display:flex;align-items:center;gap:13px;padding:12px;background:var(--card,#fff);border-radius:14px;color:inherit;text-decoration:none;box-shadow:0 9px 24px rgba(0,0,0,.08)}
+.board-mini img{width:64px;height:64px;border-radius:11px;object-fit:cover;object-position:center top}
+.board-mini span{display:grid;gap:2px}.board-mini small{color:var(--red,#d10d16);font-weight:750}
+.section-action{text-align:center;margin-top:28px}
+[data-theme="dark"] .board-card,[data-theme="dark"] .board-mini{background:#202124}
+@media(max-width:1250px){.board-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.board-mini-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:820px){.board-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.board-mini-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){.board-grid,.board-mini-grid{grid-template-columns:1fr}.board-card img{aspect-ratio:16/11}}
+
+/* RC2: Köpfe auf der Vorstandsübersicht vollständig darstellen */
+.board-card img.portrait-full-head{
+  object-fit:contain;
+  object-position:center top;
+  background:var(--soft,#f5f5f5);
+  padding:8px 8px 0;
+}
+[data-theme="dark"] .board-card img.portrait-full-head{
+  background:#171819;
+}
+
+/* RC5: Shinkyokushin- und Sosai-Artikel */
+.hero-club-word{font-size:.76em;letter-spacing:-.045em}
+.article-hero{padding-bottom:76px}
+.article-layout{display:grid;grid-template-columns:minmax(0,1fr) 310px;gap:64px;align-items:start}
+.article-content{max-width:820px}
+.article-content h2{margin-top:48px;margin-bottom:16px;font-size:clamp(1.65rem,3vw,2.35rem)}
+.article-content h2:first-child{margin-top:0}
+.article-content h3{margin-bottom:7px}
+.article-content p{font-size:1.04rem;line-height:1.82}
+.article-list{display:grid;gap:10px;padding-left:22px;line-height:1.65}
+.article-highlight{margin:38px 0;padding:25px 28px;border-left:5px solid var(--red,#d10d16);background:var(--soft,#f5f5f5);border-radius:0 15px 15px 0}
+.article-highlight strong{font-size:1.1rem}.article-highlight p{margin:7px 0 0}
+.article-aside{position:sticky;top:110px;display:grid;gap:20px}
+.history-image{margin:0;background:var(--card,#fff);padding:20px;border-radius:20px;box-shadow:0 15px 38px rgba(0,0,0,.12);text-align:center}
+.history-image img{display:block;max-width:100%;height:auto;margin:auto;border-radius:10px}
+.kanku-image img{width:135px;image-rendering:auto}
+.oyama-image img{width:100%;max-width:235px}
+.history-image figcaption{margin-top:14px;font-weight:800}
+.aside-card{padding:22px;background:var(--card,#fff);border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,.08)}
+.aside-card h3,.aside-card p{margin-bottom:0}
+.symbol-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin:28px 0}
+.symbol-grid>div{padding:20px;border:1px solid rgba(128,128,128,.22);border-radius:15px}
+.symbol-grid p{font-size:.95rem;margin-bottom:0}
+.article-next{display:flex;align-items:center;justify-content:space-between;gap:25px;margin-top:52px;padding:28px;background:var(--soft,#f5f5f5);border-radius:18px}
+.article-next p{margin:0;font-weight:750}
+.timeline{position:relative;display:grid;gap:0;margin:35px 0}
+.timeline>div{display:grid;grid-template-columns:90px 1fr;gap:24px;padding:17px 0;border-bottom:1px solid rgba(128,128,128,.25)}
+.timeline span{font-weight:900;color:var(--red,#d10d16);font-size:1.12rem}
+.timeline p{margin:0}
+.history-card-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.history-link-card{display:grid;grid-template-columns:150px 1fr;gap:25px;align-items:center;padding:25px;background:var(--card,#fff);border-radius:20px;color:inherit;text-decoration:none;box-shadow:0 14px 36px rgba(0,0,0,.10);transition:transform .25s ease,box-shadow .25s ease}
+.history-link-card:hover{transform:translateY(-6px);box-shadow:0 20px 45px rgba(0,0,0,.15)}
+.history-link-card img{width:150px;height:180px;object-fit:contain;border-radius:13px;background:var(--soft,#f5f5f5);padding:12px}
+.history-link-card h3{font-size:1.45rem;margin:5px 0 10px}
+.history-link-card p{margin-bottom:14px}.history-link-card span{color:var(--red,#d10d16);font-weight:850}
+[data-theme="dark"] .article-highlight,[data-theme="dark"] .article-next,[data-theme="dark"] .history-link-card img{background:#171819}
+[data-theme="dark"] .history-image,[data-theme="dark"] .aside-card,[data-theme="dark"] .history-link-card{background:#202124}
+@media(max-width:950px){.article-layout{grid-template-columns:1fr}.article-aside{position:static;grid-template-columns:repeat(3,1fr);align-items:start}.history-card-grid{grid-template-columns:1fr}.history-link-card{max-width:760px}}
+@media(max-width:700px){.article-aside{grid-template-columns:1fr}.symbol-grid{grid-template-columns:1fr}.article-next{align-items:flex-start;flex-direction:column}.history-link-card{grid-template-columns:90px 1fr;padding:18px;gap:17px}.history-link-card img{width:90px;height:125px}.hero-club-word{font-size:.64em}}
+
+/* RC6 erweitertes Trainerteam */
+.trainer-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+.trainer-card>a{display:flex;flex-direction:column;height:100%;color:inherit;text-decoration:none}
+.trainer-card img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:center top}
+.trainer-card-body{display:flex;flex-direction:column;align-items:flex-start;flex:1}
+.trainer-card .profile-link{margin-top:auto}
+@media(max-width:1100px){.trainer-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:760px){.trainer-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){.trainer-grid{grid-template-columns:1fr}}
+
+/* RC6.1 Portrait-Korrektur */
+.trainer-card img[src*="jaqueline-migliaccio"],
+.trainer-card img[src*="michelle-erni"]{
+  object-position:center 18%;
+}
+
+/* RC7: Hauptmenü mit Shinkyokushin-Untermenü */
+.nav-dropdown{position:relative;display:flex;align-items:center}
+.nav-dropdown-toggle{display:flex;align-items:center;gap:6px;border:0;background:transparent;color:inherit;font:inherit;font-weight:inherit;cursor:pointer;padding:10px 0}
+.nav-dropdown-menu{position:absolute;top:calc(100% + 10px);left:0;min-width:245px;padding:9px;background:var(--card,#fff);border-radius:14px;box-shadow:0 18px 45px rgba(0,0,0,.18);opacity:0;visibility:hidden;transform:translateY(-6px);transition:.2s ease;z-index:100}
+.nav-dropdown-menu a{display:block;padding:11px 13px;border-radius:9px;white-space:nowrap}
+.nav-dropdown-menu a:hover{background:var(--soft,#f4f4f4)}
+.nav-dropdown:hover .nav-dropdown-menu,.nav-dropdown:focus-within .nav-dropdown-menu,.nav-dropdown.is-open .nav-dropdown-menu{opacity:1;visibility:visible;transform:translateY(0)}
+[data-theme="dark"] .nav-dropdown-menu{background:#202124}
+[data-theme="dark"] .nav-dropdown-menu a:hover{background:#2a2b2e}
+.dojo-kun-section{margin:52px 0 12px}
+.dojo-kun-card{display:grid;gap:0;border-radius:20px;overflow:hidden;background:var(--card,#fff);box-shadow:0 16px 42px rgba(0,0,0,.10)}
+.dojo-kun-card p{margin:0;padding:18px 22px;border-bottom:1px solid rgba(128,128,128,.20);font-size:1rem;line-height:1.65}
+.dojo-kun-card p:last-child{border-bottom:0}
+[data-theme="dark"] .dojo-kun-card{background:#202124}
+@media(max-width:900px){
+  .nav-dropdown{display:block;width:100%}
+  .nav-dropdown-toggle{width:100%;justify-content:space-between;padding:12px 0}
+  .nav-dropdown-menu{position:static;min-width:0;width:100%;padding:0 0 0 14px;box-shadow:none;background:transparent;opacity:1;visibility:visible;transform:none;display:none}
+  .nav-dropdown.is-open .nav-dropdown-menu{display:block}
+  .nav-dropdown-menu a{padding:10px 0}
+}
+
+/* RC8: sauberes Shinkyokushin-Dropdown */
+.nav-dropdown-toggle{
+  position:relative;
+  padding:30px 0;
+  text-transform:uppercase;
+  font-size:13px;
+  font-weight:800;
+}
+.nav-dropdown-toggle::after{
+  content:"";
+  position:absolute;
+  left:0;
+  right:100%;
+  bottom:20px;
+  height:2px;
+  background:var(--red);
+  transition:right .25s ease;
+}
+.nav-dropdown:hover .nav-dropdown-toggle::after,
+.nav-dropdown:focus-within .nav-dropdown-toggle::after,
+.nav-dropdown.is-open .nav-dropdown-toggle::after{
+  right:0;
+}
+/* Untermenü-Links verwenden nur den Flächen-Hover, nicht die Hauptmenü-Linie */
+.main-nav .nav-dropdown-menu a::after{
+  display:none;
+}
+.main-nav .nav-dropdown-menu a{
+  text-transform:none;
+  font-size:14px;
+  padding:11px 13px;
+}
+
+/* RC8: zweisprachiger Dojo-Eid */
+.dojo-japanese-title{
+  display:inline-block;
+  margin-left:.25em;
+  color:var(--red);
+  font-size:.72em;
+  letter-spacing:.08em;
+}
+.dojo-language-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:25px;
+  align-items:start;
+}
+.dojo-language-card{
+  overflow:hidden;
+  border-radius:20px;
+  background:var(--surface);
+  border:1px solid var(--line);
+  box-shadow:0 16px 42px rgba(0,0,0,.10);
+}
+.dojo-language-head{
+  padding:25px 27px;
+  background:#151515;
+  color:#fff;
+  border-left:5px solid var(--red);
+}
+.dojo-language-head span{
+  display:block;
+  margin-bottom:4px;
+  color:var(--red);
+  font-weight:900;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  font-size:12px;
+}
+.dojo-language-head h3{
+  margin:0 0 4px;
+  font-size:1.35rem;
+}
+.dojo-language-head p{
+  margin:0;
+  color:#c8c8c8;
+  font-size:.9rem;
+}
+.dojo-verses{
+  margin:0;
+  padding:0;
+  list-style:none;
+  counter-reset:dojo;
+}
+.dojo-verses li{
+  counter-increment:dojo;
+  position:relative;
+  margin:0;
+  padding:20px 23px 20px 60px;
+  border-bottom:1px solid var(--line);
+  line-height:1.72;
+}
+.dojo-verses li:last-child{border-bottom:0}
+.dojo-verses li::before{
+  content:counter(dojo, decimal-leading-zero);
+  position:absolute;
+  left:22px;
+  top:21px;
+  color:var(--red);
+  font-weight:900;
+  font-size:.83rem;
+}
+.dojo-japanese .dojo-verses li{
+  font-style:italic;
+}
+.dojo-japanese .dojo-verses strong{
+  color:var(--red);
+  font-style:normal;
+}
+.kanku-image img{
+  width:190px;
+  max-height:240px;
+  object-fit:contain;
+}
+.kanku-image figcaption{
+  display:grid;
+  gap:5px;
+}
+.kanku-image figcaption small{
+  font-size:.7rem;
+  line-height:1.4;
+  font-weight:500;
+  color:var(--muted);
+}
+.kanku-image figcaption a{
+  color:var(--red);
+}
+
+@media(max-width:900px){
+  .nav-dropdown-toggle{
+    padding:14px 4px;
+  }
+  .nav-dropdown-toggle::after{
+    bottom:8px;
+  }
+  .dojo-language-grid{
+    grid-template-columns:1fr;
+  }
+}
+
+/* RC10: stabiler Dojo-Eid innerhalb des Shinkyokushin-Artikels */
+.article-content > .dojo-kun-section{margin-top:56px;scroll-margin-top:110px}
+.article-content > .dojo-kun-section .section-heading{margin-bottom:28px}
+@media(max-width:900px){.article-content > .dojo-kun-section{margin-top:40px;scroll-margin-top:90px}}
+
+
+/* RC11: Shinkyokushin als eigenständiger Hauptmenüpunkt und Landingpage */
+.shinky-page{padding-top:55px}
+.article-toc{display:grid;grid-template-columns:.7fr 1.3fr;gap:40px;padding:34px;border:1px solid var(--line);border-radius:24px;background:var(--surface);box-shadow:var(--shadow);margin-bottom:65px}
+.article-toc-head h2{margin:4px 0 8px;font-size:clamp(28px,3vw,40px)}
+.article-toc-head p:last-child{margin:0;color:var(--muted)}
+.article-toc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.article-toc-grid a{display:flex;align-items:center;gap:10px;min-height:58px;padding:12px 14px;border:1px solid var(--line);border-radius:13px;text-decoration:none;font-weight:800;font-size:.86rem;transition:.2s ease}
+.article-toc-grid a span{color:var(--red);font-size:.72rem;letter-spacing:.08em}
+.article-toc-grid a:hover{transform:translateY(-2px);border-color:var(--red);box-shadow:0 9px 25px rgba(210,13,22,.12)}
+.shinky-content{max-width:1120px;margin:auto}
+.shinky-chapter{display:grid;grid-template-columns:85px minmax(0,1fr);gap:30px;padding:75px 0;border-top:1px solid var(--line);scroll-margin-top:105px}
+.shinky-chapter:first-child{border-top:0;padding-top:10px}
+.chapter-number{position:sticky;top:115px;align-self:start;margin:7px 0 0;color:var(--red);font-size:1rem;font-weight:900;letter-spacing:.12em}
+.chapter-body{min-width:0;max-width:940px}
+.chapter-body>h2{margin-top:7px}
+.chapter-body>h3{font-size:1.45rem;margin-top:36px}
+.chapter-body>p{font-size:1.04rem;line-height:1.82}
+.philosophy-grid,.club-facts{display:grid;grid-template-columns:repeat(2,1fr);gap:15px;margin-top:28px}
+.philosophy-grid>div,.club-facts>div{padding:23px;border:1px solid var(--line);border-radius:16px;background:var(--surface)}
+.philosophy-grid strong{display:block;color:var(--red);font-size:1.05rem}
+.philosophy-grid p{margin:6px 0 0;color:var(--muted)}
+.oyama-intro,.kanku-layout{display:grid;grid-template-columns:280px minmax(0,1fr);gap:35px;align-items:start;margin:28px 0}
+.oyama-intro .history-image,.kanku-layout .history-image{position:static}
+.oyama-intro h3{margin-top:0}
+.kanku-layout .kanku-image img{width:170px}
+.club-facts{grid-template-columns:repeat(3,1fr)}
+.club-facts strong,.club-facts span{display:block}
+.club-facts strong{color:var(--red);font-size:1.35rem}
+.club-facts span{margin-top:5px;color:var(--muted);font-size:.9rem}
+.shinky-chapter.dojo-kun-section{margin:0}
+.shinky-chapter .dojo-language-grid{margin-top:30px}
+.shinky-chapter .timeline{margin-top:30px}
+@media(max-width:950px){.article-toc{grid-template-columns:1fr}.article-toc-grid{grid-template-columns:repeat(2,1fr)}.shinky-chapter{grid-template-columns:55px 1fr}.oyama-intro,.kanku-layout{grid-template-columns:220px 1fr}}
+@media(max-width:700px){.article-toc{padding:24px}.article-toc-grid{grid-template-columns:1fr}.shinky-chapter{grid-template-columns:1fr;gap:6px;padding:55px 0}.chapter-number{position:static}.oyama-intro,.kanku-layout{grid-template-columns:1fr}.oyama-intro .history-image,.kanku-layout .history-image{max-width:340px}.philosophy-grid,.club-facts{grid-template-columns:1fr}.shinky-page{padding-top:35px}}
+
+
+/* RC12: Vereinsartikel */
+.club-page-hero{padding-bottom:72px}
+.club-page-hero h1{max-width:900px}
+.club-article{max-width:1060px}
+.club-intro{max-width:900px;margin-bottom:55px}
+.club-intro h2{max-width:780px}
+.club-lead{font-size:1.18rem;line-height:1.8;color:var(--ink)}
+.club-intro>p:not(.eyebrow){line-height:1.82}
+.club-chapter{display:grid;grid-template-columns:72px minmax(0,1fr);gap:30px;padding:64px 0;border-top:1px solid var(--line)}
+.club-chapter-number{margin:8px 0 0;color:var(--red);font-size:1rem;font-weight:900;letter-spacing:.12em}
+.club-chapter h2{margin-top:7px}
+.club-chapter p{font-size:1.04rem;line-height:1.82}
+.club-success-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:15px;margin:28px 0}
+.club-success-grid>div{padding:24px;border:1px solid var(--line);border-radius:16px;background:var(--surface)}
+.club-success-grid strong,.club-success-grid span{display:block}
+.club-success-grid strong{color:var(--red);font-size:1.55rem;line-height:1.1}
+.club-success-grid span{margin-top:8px;color:var(--muted);line-height:1.5}
+.club-notice{margin:27px 0;padding:24px 26px;border-left:5px solid var(--red);border-radius:0 16px 16px 0;background:var(--soft)}
+.club-notice>strong{font-size:1.08rem}
+.club-notice p{margin:8px 0 0}
+.club-values-list{display:grid;grid-template-columns:repeat(2,1fr);gap:11px;margin:25px 0 0;padding:0;list-style:none}
+.club-values-list li{position:relative;padding:15px 18px 15px 43px;border:1px solid var(--line);border-radius:13px;background:var(--surface);font-weight:750}
+.club-values-list li::before{content:"✓";position:absolute;left:17px;color:var(--red);font-weight:900}
+.club-jubilee{display:grid;grid-template-columns:230px minmax(0,1fr);gap:48px;margin:62px 0;padding:58px;border-radius:24px;background:#151515;color:#fff;box-shadow:var(--shadow)}
+.club-jubilee-number{align-self:start;color:var(--red);font-size:clamp(110px,15vw,190px);font-weight:950;line-height:.82;letter-spacing:-.08em}
+.club-jubilee h2{color:#fff;margin-top:8px}
+.club-jubilee p{color:#d0d0d0;line-height:1.78}
+.club-jubilee p strong{color:#fff}
+.club-quote{margin:68px auto;padding:38px 45px;border:0;border-left:5px solid var(--red);background:var(--soft);border-radius:0 20px 20px 0}
+.club-quote p{margin:0;font-size:clamp(24px,3vw,38px);font-weight:800;line-height:1.32;letter-spacing:-.025em}
+.club-quote footer{margin-top:18px;color:var(--red);font-size:.78rem;font-weight:900;text-transform:uppercase;letter-spacing:.1em}
+.club-article .cta p{margin:0;color:color-mix(in srgb,var(--bg) 70%,transparent)}
+.club-article .cta .eyebrow{color:#fff;margin-bottom:5px}
+@media(max-width:760px){
+  .club-chapter{grid-template-columns:1fr;gap:5px;padding:48px 0}
+  .club-chapter-number{margin-bottom:0}
+  .club-success-grid,.club-values-list{grid-template-columns:1fr}
+  .club-jubilee{grid-template-columns:1fr;gap:28px;padding:35px 26px}
+  .club-jubilee-number{font-size:110px}
+  .club-quote{padding:30px 25px}
+}
+
+
+/* RC13: Mitgliedschaft und Trainingskosten */
+.membership-pricing {
+  position: relative;
+}
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 34px;
+}
+.pricing-card {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background: var(--surface);
+  box-shadow: 0 18px 48px rgba(0, 0, 0, .09);
+}
+.pricing-card-head {
+  padding: 25px 27px 22px;
+  color: #fff;
+  background: #151515;
+  border-left: 5px solid var(--red);
+}
+.pricing-kicker {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--red);
+  font-size: .75rem;
+  font-weight: 900;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+.pricing-card-head h3 {
+  margin: 0;
+  color: #fff;
+  font-size: 1.45rem;
+}
+.pricing-list {
+  margin: 0;
+}
+.pricing-list > div {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 20px;
+  align-items: center;
+  padding: 20px 25px;
+  border-bottom: 1px solid var(--line);
+}
+.pricing-list > div:last-child {
+  border-bottom: 0;
+}
+.pricing-list dt {
+  margin: 0;
+  line-height: 1.45;
+  font-weight: 700;
+}
+.pricing-list dd {
+  margin: 0;
+  color: var(--red);
+  font-size: 1.28rem;
+  font-weight: 900;
+  white-space: nowrap;
+}
+.pricing-list dd span {
+  font-size: .72rem;
+  letter-spacing: .04em;
+}
+.pricing-note {
+  margin-top: 26px;
+  padding: 28px;
+  border-radius: 20px;
+  background: var(--soft);
+  border-left: 5px solid var(--red);
+}
+.pricing-note h3 {
+  margin: 0 0 8px;
+}
+.pricing-note p {
+  max-width: 820px;
+  margin: 0 0 20px;
+}
+@media (max-width: 820px) {
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 520px) {
+  .pricing-list > div {
+    grid-template-columns: 1fr;
+    gap: 7px;
+  }
+  .pricing-list dd {
+    font-size: 1.18rem;
+  }
+}
+
+
+/* RC14: Vorstand auf der Vereinsseite */
+.club-board-section {
+  padding-top: clamp(72px, 9vw, 118px);
+  padding-bottom: clamp(72px, 9vw, 118px);
+}
+.club-board-section .section-heading {
+  max-width: 760px;
+  margin-bottom: 38px;
+}
+.club-board-section .board-grid {
+  margin-top: 0;
+}
+.membership-pricing + .club-board-section {
+  border-top: 1px solid var(--line);
+}
+
+.future-board{background:var(--soft);padding:4rem 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+
+.story-highlight{
+ background:linear-gradient(180deg,var(--soft),#fff);
+ border-top:1px solid var(--line);
+ border-bottom:1px solid var(--line);
+ padding:4rem 0;
+}
+.story-highlight .section-heading{
+ max-width:850px;
+ margin:0 auto 2rem;
+}
+
+
+/* RC14.3.4: Zukunftsartikel optisch identisch zum 30-Jahre-Artikel */
+.club-future {
+  margin-top: 28px;
+}
+.club-future-number {
+  font-size: clamp(3.8rem, 9vw, 7.5rem);
+  line-height: 1;
+}
+
+/* RC15 Kontaktseite */
+.contact-intro{max-width:760px;margin-bottom:42px}.contact-intro p{font-size:1.08rem;color:var(--muted)}.contact-person-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px}.contact-person-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:38px;box-shadow:var(--shadow);display:flex;flex-direction:column}.contact-role{color:var(--red);font-weight:900;text-transform:uppercase;letter-spacing:.09em;font-size:.78rem}.contact-person-card h2{font-size:clamp(1.8rem,3vw,2.5rem);margin:8px 0 25px}.contact-details{display:grid;gap:12px;margin-bottom:30px}.contact-details a{display:flex;align-items:center;gap:15px;padding:14px 0;border-bottom:1px solid var(--line);text-decoration:none;overflow-wrap:anywhere}.contact-details a>span:first-child{display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:var(--soft);color:var(--red);font-size:1.2rem;flex:0 0 auto}.contact-details small{display:block;color:var(--muted);font-size:.76rem;text-transform:uppercase;font-weight:800;letter-spacing:.07em}.contact-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:auto}.contact-actions .btn{flex:1;min-width:125px;padding:12px 17px}.btn-whatsapp{background:#178b46}.btn-whatsapp:hover{background:#11743a}.btn-secondary{background:transparent;color:var(--ink);border:1px solid var(--line)}.btn-secondary:hover{background:var(--soft);color:var(--ink);box-shadow:none}.legal h2{margin-top:42px}.legal h2:first-child{margin-top:0}.legal p{font-size:1.03rem}@media(max-width:820px){.contact-person-grid{grid-template-columns:1fr}.contact-person-card{padding:28px}}@media(max-width:480px){.contact-actions{display:grid}.contact-actions .btn{width:100%}}
+
+/* RC16 homepage refinements */
+.values{margin-top:-22px}.values-grid{padding:13px 22px}.value{gap:30px;padding:8px 24px}.training-offers-section{padding:42px 0 28px;background:var(--soft)}.training-offers-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.training-offer-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:0 8px 25px rgba(0,0,0,.05);padding:28px 30px;min-height:210px}.training-offer-card h2{font-size:32px;margin:8px 0 18px}.training-offer-card h3{font-size:22px;text-transform:uppercase;margin:0 0 3px}.training-offer-card p{color:var(--muted);margin:18px 0 0}.training-trial{text-align:center;margin-top:18px}.training-trial p{font-weight:750;margin:0 0 10px}@media(max-width:900px){.training-offers-grid{grid-template-columns:1fr}.training-offer-card{min-height:auto}}@media(max-width:760px){.values{margin-top:-12px}.values-grid{padding:10px 18px}.value{gap:22px;padding:12px 5px}.training-offers-section{padding:34px 0 24px}}
+
+
+/* RC16.6 contact action buttons */
+.contact-actions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.contact-actions .btn{width:100%;min-width:0;text-align:center}
+.btn-phone{background:var(--red)}
+.btn-whatsapp{background:#178b46}
+.btn-email{background:transparent;color:var(--ink);border:1px solid var(--line)}
+.btn-email:hover{background:var(--soft);color:var(--ink);box-shadow:none}
+@media(max-width:620px){.contact-actions{grid-template-columns:1fr}}
+
+
+/* RC17: nummerierungsfreie Artikel und scrollbarer Startseiten-Feed */
+.club-chapter,
+.shinky-chapter {
+  grid-template-columns: minmax(0, 1fr);
+}
+.homepage-feed {
+  overflow: hidden;
+}
+.feed-intro {
+  padding-bottom: 28px;
+  text-align: center;
+}
+.feed-intro .container {
+  max-width: 850px;
+}
+.feed-intro h2 {
+  margin: 6px 0 12px;
+  font-size: clamp(30px, 4vw, 52px);
+}
+.feed-page {
+  border-top: 1px solid var(--line);
+}
+.feed-page-heading {
+  padding-top: 78px;
+  padding-bottom: 24px;
+}
+.feed-page-heading h2 {
+  margin: 6px 0 10px;
+  font-size: clamp(34px, 5vw, 64px);
+}
+.feed-page-heading h2 a {
+  color: inherit;
+  text-decoration: none;
+}
+.feed-page-heading h2 a span {
+  color: var(--red);
+  display: inline-block;
+  transition: transform .2s ease;
+}
+.feed-page-heading h2 a:hover span {
+  transform: translateX(7px);
+}
+.feed-page-heading > p:last-child {
+  max-width: 760px;
+  color: var(--muted);
+  font-size: 1.08rem;
+}
+.feed-page > .section:first-of-type {
+  padding-top: 38px;
+}
+.feed-page-shinkyokushin .shinky-page {
+  padding-top: 18px;
+}
+.feed-page .article-next {
+  margin-bottom: 20px;
+}
+@media (max-width: 700px) {
+  .feed-page-heading {
+    padding-top: 56px;
+  }
+}
+
+/* RC17.1: Einheitlicher Kontakt-Button in Trainer- und Vorstandsprofilen */
+.profile-contact-action{margin-top:1.25rem;display:flex;justify-content:flex-start}
+.profile-contact-action .btn{min-width:150px;text-align:center}
+
+/* RC17.3: Neues Porträt mit vergleichbarer Kopfgrösse und vollständigem Kopf. */
+.trainer-card img[src*="jaqueline-migliaccio"],
+.board-card img[src*="jaqueline-migliaccio"] {
+  object-fit: cover;
+  object-position: center 25%;
+  padding: 0;
+}
+
+/* RC17.4: Michelles Porträt an die Grösse der übrigen Porträts angleichen. */
+.michelle-portrait-frame { display: block; overflow: hidden; aspect-ratio: 4/3; }
+.trainer-card .michelle-portrait-frame img,
+.board-card .michelle-portrait-frame img.portrait-full-head {
+  display: block; width: 100%; height: 100%; aspect-ratio: auto;
+  object-fit: cover; object-position: center 25%; padding: 0;
+  transform: scale(1.3); transform-origin: 50% 40%;
+}
+.profile-image[src*="michelle-erni"] { transform: scale(1.3); transform-origin: 50% 40%; }
+@media(max-width:520px) { .board-card .michelle-portrait-frame { aspect-ratio: 16/11; } }
+
+/* RC17.5: Claudias neues Foto mit harmonischem Bildausschnitt. */
+.trainer-card img[src*="claudia-erni"],
+.board-card img[src*="claudia-erni"] {
+  object-fit: cover; object-position: center 25%; padding: 0;
+}
+
+.claudia-portrait-frame { display: block; overflow: hidden; aspect-ratio: 4/3; }
+.trainer-card .claudia-portrait-frame img,
+.board-card .claudia-portrait-frame img {
+  display: block; width: 100%; height: 100%; aspect-ratio: auto;
+  object-fit: cover; object-position: center 25%; padding: 0;
+  transform: scale(1.15); transform-origin: 50% 40%;
+}
+.profile-image[src*="claudia-erni"] { transform: scale(1.15); transform-origin: 50% 40%; }
+@media(max-width:520px) { .board-card .claudia-portrait-frame { aspect-ratio: 16/11; } }

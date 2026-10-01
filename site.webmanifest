@@ -1,0 +1,15 @@
+{
+  "name": "Karateverein Dallenwil",
+  "short_name": "Karate Dallenwil",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#d20d16",
+  "icons": [
+    {
+      "src": "assets/images/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}
