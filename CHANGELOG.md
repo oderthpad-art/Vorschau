@@ -1,5 +1,14 @@
 # Changelog
 
+## v1.0-rc17.12
+- Artikel Nachwuchsförderung mit Jugend+Sport auf Start- und Vereinsseite erweitert.
+- Enge Werteübereinstimmung mit Karate eingeordnet, ohne eine vollständige Identität zu behaupten.
+- Offizielle J+S-Quellen verlinkt; README aktualisiert.
+
+## v1.0-rc17.11
+- Danielas Telefonnummer und WhatsApp-Link auf +41762485674 geändert, einschliesslich Impressum und Profilseiten.
+- README auf den aktuellen Stand gebracht und Pflege bei jeder Version dokumentiert.
+
 ## v1.0-rc17.10
 - Apache-Konfiguration für Content-Security-Policy und Anti-Clickjacking ergänzt.
 - Bestehende Inline-Skripte durch SHA-256-Hashes erlaubt; Installationshinweise in SICHERHEIT.md.

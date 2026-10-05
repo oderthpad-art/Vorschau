@@ -6,3 +6,5 @@
 4. Pull Request öffnen.
 
 Bitte keine fremden Bilder oder personenbezogenen Daten ohne Freigabe hinzufügen.
+
+Bei jeder neuen Version README.md, VERSION und CHANGELOG.md mitführen. Die README soll den aktuellen Funktionsumfang und die Änderungen der neuen Version beschreiben.

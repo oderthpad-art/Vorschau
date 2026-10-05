@@ -1,135 +1,62 @@
-# Karate Dallenwil Web – Version 1.0 RC15.2
+# Karateverein Dallenwil – Website v1.0-rc17.12
 
-Vollständige statische Testversion mit Trainerteam und Vorstand.
+Stand: 5. Oktober 2026. Statische Website aus HTML, CSS und JavaScript, unabhängig von Base44 und ohne Build-Schritt.
 
-## Vorstand
+## Aktueller Umfang
 
-- Jaqueline Migliaccio – Präsidentin
-- Daniela Wyss-Schön – Vizepräsidentin
-- Claudia Erni – Kassierin
-- Michelle Erni – Materialverwaltung
-- Thomas Odermatt – Beisitzer
+- Startseite mit Trainingsangebot, Zeiten, Trainingsort und ausführlichen Vereinsinhalten.
+- Vereinsseite mit Vorstand, Mitgliedschaft und Preisen sowie Vereinsgeschichte.
+- Sieben Trainerprofile: Adrian Schön, Daniela Wyss-Schön, Robert Wyss-Schön, Thomas Odermatt, Jaqueline Migliaccio, Claudia Erni und Michelle Erni.
+- Fünf Vorstandsprofile. Die frühere `vorstand.html` leitet auf den Vorstandsabschnitt der Vereinsseite weiter.
+- Shinkyokushin-Seite mit Dojo-Eid und Sosai-Masutatsu-Oyama-Inhalten.
+- Training für Kinder ab 6 Jahren und Erwachsene ab 18 Jahren.
+- Kontaktseite mit Anruf-, WhatsApp- und E-Mail-Links für Präsidentin und Vizepräsidentin; das Kontaktformular wurde entfernt.
+- Impressum und Datenschutz, Hell/Dunkel-Modus, responsives Menü und Animationen.
+- Sitemap, Robots-Datei, Webmanifest und Vereinslogo als Favicon.
 
-Jedes Vorstandsmitglied besitzt eine eigene Profilseite. Private Wohnadressen sind bewusst nicht veröffentlicht.
+## Aktuelle Änderungen
+
+| Version | Änderung |
+| --- | --- |
+| RC17.3 | Neues Foto von Jaqueline in Trainerteam, Vorstand und beiden Profilseiten; angepasster Bildausschnitt. |
+| RC17.4 | Neues Foto von Michelle in beiden Bereichen und Profilseiten; angepasste Kopfgrösse. |
+| RC17.5 | Neues Foto von Claudia in beiden Bereichen und Profilseiten; angepasste Kopfgrösse. |
+| RC17.6 | Erwachsenentraining auf der Trainingsseite auf 18 Jahre korrigiert. |
+| RC17.7 | Postleitzahl in der Datenschutzerklärung auf 6383 Dallenwil korrigiert. |
+| RC17.8 | Anmeldungshinweis auf der Trainingsseite: „Melde dich vorher an.“ |
+| RC17.9 | Trainerrollen auf den Detailseiten von Jaqueline, Claudia und Michelle wie bei Thomas dargestellt: „Trainer Kinder & Erwachsene“. |
+| RC17.10 | Server-Konfiguration für Content Security Policy und Schutz gegen Clickjacking ergänzt. |
+| RC17.12 | J+S-Artikel auf Start- und Vereinsseite erweitert: gemeinsame Werte mit Karate, verantwortungsvolle Förderung und offizielle Quellen. |
+| RC17.11 | Danielas Telefonnummer und WhatsApp-Link auf +41762485674 aktualisiert; README auf den aktuellen Stand gebracht. |
+
+Die ausführliche Versionshistorie steht in [CHANGELOG.md](CHANGELOG.md).
+
+## Kontakt
+
+Daniela Wyss-Schön: **+41 76 248 56 74**. Anruflinks verwenden `tel:+41762485674`, der WhatsApp-Link verwendet `https://wa.me/41762485674`.
 
 ## Lokal testen
 
-ZIP entpacken und `index.html` öffnen.
-
-Empfohlen:
+ZIP entpacken. Im entpackten Website-Ordner starten:
 
 ```bash
 python -m http.server 8000
 ```
 
-Danach `http://localhost:8000` öffnen.
+Dann `http://localhost:8000` öffnen. Auch ein direkter Aufruf von `index.html` ist möglich. Der lokale Python-Server verarbeitet die `.htaccess` nicht und setzt damit die enthaltenen Sicherheits-Header nicht.
 
-## Enthalten
+## Veröffentlichung und Sicherheits-Header
 
-- Startseite
-- Verein mit Vorstandsvorschau
-- vollständige Vorstandsübersicht
-- fünf Vorstandsprofile
-- vollständiges Trainerteam mit vier Trainerprofilen
-- Training
-- Kontaktformular
-- Impressum und Datenschutz
-- Dark Mode
-- Animationen
-- responsives Hamburger-Menü
-- SEO, Sitemap, Robots und Webmanifest
-- GitHub-Pages-Konfiguration
+Den Inhalt des Website-Ordners inklusive `.htaccess` in das Webverzeichnis hochladen. Bei bestehender `.htaccess` vorher sichern und die Header-Regeln mit den vorhandenen Regeln zusammenführen.
 
-## Korrekturen in RC2
+Die `.htaccess` setzt auf Apache-kompatiblem Hosting mit `mod_headers` und entsprechender Berechtigung eine Content Security Policy sowie `X-Frame-Options: DENY`. Andere Hosting-Systeme benötigen eine eigene Header-Konfiguration. Nach dem Upload die tatsächlichen Antwort-Header und die Website-Funktionen prüfen; anschliessend Aikido erneut scannen lassen. Die Wirksamkeit auf dem Live-Server wurde hier nicht bestätigt.
 
-- Kopf von Jaqueline Migliaccio auf `vorstand.html` vollständig sichtbar
-- Kopf von Michelle Erni auf `vorstand.html` vollständig sichtbar
-- `logo.gif` ausserhalb des roten Kreises transparent
-- zusätzliche transparente PNG-Version für moderne Browser
+Details stehen in [SICHERHEIT.md](SICHERHEIT.md). Bei Änderungen an Inline-Skripten oder strukturierten Daten müssen die SHA-256-Hashes der CSP angepasst werden.
 
-## Korrektur in RC3
+## Pflege bei jeder neuen Version
 
-- Vereinsname auf der gesamten Website vereinheitlicht:
-  **Shinkyokushin Karateverein Dallenwil**
-- sichtbare Markenbezeichnung im Header angepasst
-- Seitentitel, Meta-Beschreibungen, Footer und Dokumentation aktualisiert
-
-## Neue Inhalte in RC5
-
-- neue Seite `shinkyokushin.html`
-- neue Seite `sosai-oyama.html`
-- Kanku-Zeichen und Oyama-Porträt eingebunden
-- neue Artikelvorschau auf der Vereinsseite
-- Hero-Titel auf „Shinkyokushin Karateverein Dallenwil“ korrigiert
-- Sitemap und Footer erweitert
-
-## RC6
-Trainerteam um Jaqueline Migliaccio, Claudia Erni und Michelle Erni erweitert. Alle sieben Personen werden gleichwertig dargestellt.
-
-## RC7
-
-- Shinkyokushin in das Hauptmenü aufgenommen
-- Untermenü mit «Sosai Masutatsu Oyama» und «Dojo-Eid» ergänzt
-- Dojo-Eid von der Vereinsseite auf die Shinkyokushin-Seite verschoben
-- Hero-Texte auf der Startseite vertauscht
-
-## RC8
-
-- Dojo-Eid um das romanisierte japanische Original erweitert
-- zweisprachige Darstellung des Dojo-Eids umgesetzt
-- Hover-Unterstreichung beim Shinkyokushin-Dropdown korrigiert
-- unscharfes Kanku-GIF durch hochauflösendes Wikimedia-SVG ersetzt
-- Lizenz- und Urhebernachweis ergänzt
-
-## RC10
-
-- Shinkyokushin-Seite aus stabiler Struktur neu aufgebaut
-- doppelten Dojo-Eid vollständig entfernt
-- Kobudo aus den Besonderheiten entfernt
-- HTML-Struktur, Stylesheet-Einbindung und interne Links geprüft
-
-## RC11
-
-- Dropdown unter Shinkyokushin entfernt
-- Shinkyokushin als direkter Hauptmenüpunkt umgesetzt
-- Inhaltsübersicht mit Sprungmarken ergänzt
-- Dojo-Eid und Sosai-Masutatsu-Oyama-Artikel auf einer Seite zusammengeführt
-- Kanku-Zeichen und Vereinsgeschichte in die neue Kapitelstruktur integriert
-- responsive Landingpage-Gestaltung ergänzt
-
-
-## RC12
-
-- Vereinsseite vollständig als moderner, textbasierter Artikel neu aufgebaut
-- Vereinsgeschichte, Kinderkarate, sportliche Erfolge und J+S-Nachwuchsförderung integriert
-- Jubiläumsbereich «30 Jahre Vereinsgeschichte» ergänzt
-- Leitgedanke und Schnuppertraining-CTA hinzugefügt
-- Responsive Darstellung ohne Platzhalterbilder umgesetzt
-
-## RC13
-
-- Jahresbeiträge am Ende des Vereinsartikels ergänzt
-- Preise der Anfängerkurse ergänzt
-- responsive Preiskarten im bestehenden Design umgesetzt
-- direkter Kontaktaufruf zum Probetraining ergänzt
-
-
-## RC14
-
-- Mitgliedschaft und Trainingskosten an das Ende des Vereinsartikels verschoben
-- kompletter Vorstand in die Vereinsseite integriert
-- Reihenfolge: Vereinsgeschichte, Mitgliedschaft, Vorstand, Leitgedanke und Schlussbereich
-- Menüpunkt „Vorstand“ aus der Hauptnavigation entfernt
-- bisherige `vorstand.html` leitet auf `verein.html#vorstand` weiter
-
-
-## RC14.2
-
-- Reihenfolge auf der Vereinsseite korrigiert: Vorstand, Preise, Vereinsartikel
-- doppelte Abschlusssektion entfernt
-- Formulierung zu Thomas Odermatt historisch angepasst
-
-
-## RC15.2
-
-RC15.2 basiert auf RC14.3.4 und ergänzt die neue direkte Kontaktseite, Impressum, Datenschutz und den vereinheitlichten Footer.
+- README mit Versionsnummer, aktuellem Umfang und Änderungen nachführen.
+- VERSION und CHANGELOG synchron aktualisieren.
+- Kontaktangaben in sichtbarem Text, Anruf- und WhatsApp-Links abgleichen.
+- Interne Links, Bildverweise und ZIP-Inhalt prüfen.
+- Nur freigegebene Vereinsbilder verwenden.
