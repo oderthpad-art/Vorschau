@@ -1,6 +1,6 @@
-# Karateverein Dallenwil – Website v1.0-rc17.12
+# Karateverein Dallenwil – Website v1.0-rc17.13
 
-Stand: 5. Oktober 2026. Statische Website aus HTML, CSS und JavaScript, unabhängig von Base44 und ohne Build-Schritt.
+Stand: 6. Oktober 2026. Statische Website aus HTML, CSS und JavaScript, unabhängig von Base44 und ohne Build-Schritt.
 
 ## Aktueller Umfang
 
@@ -26,6 +26,7 @@ Stand: 5. Oktober 2026. Statische Website aus HTML, CSS und JavaScript, unabhän
 | RC17.8 | Anmeldungshinweis auf der Trainingsseite: „Melde dich vorher an.“ |
 | RC17.9 | Trainerrollen auf den Detailseiten von Jaqueline, Claudia und Michelle wie bei Thomas dargestellt: „Trainer Kinder & Erwachsene“. |
 | RC17.10 | Server-Konfiguration für Content Security Policy und Schutz gegen Clickjacking ergänzt. |
+| RC17.13 | Formulierung zur Übereinstimmung von Karate-Philosophie und J+S-Grundsätzen auf Start- und Vereinsseite angepasst. |
 | RC17.12 | J+S-Artikel auf Start- und Vereinsseite erweitert: gemeinsame Werte mit Karate, verantwortungsvolle Förderung und offizielle Quellen. |
 | RC17.11 | Danielas Telefonnummer und WhatsApp-Link auf +41762485674 aktualisiert; README auf den aktuellen Stand gebracht. |
 
