@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.0-rc17.14
+- Gesamten Abschnitt „Wettkampf und Leistung – Sportliche Erfolge“ auf Start- und Vereinsseite entfernt.
+- README und VERSION aktualisiert.
+
 ## v1.0-rc17.13
 - Satz zur Übereinstimmung von Karate-Philosophie und J+S-Grundsätzen gemäss gewünschter Formulierung auf Start- und Vereinsseite geändert.
 - README und Versionsangabe aktualisiert.
